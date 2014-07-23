@@ -1,0 +1,2 @@
+/* from angular-bootstrap doc: cannot count on empty href attributes for cursor styling */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
