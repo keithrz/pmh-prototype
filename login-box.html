@@ -1,34 +1,18 @@
 <div id="login-box-wrapper">
     <div id="login-box" class="row-fluid">
-        <form name="loginForm" ng-controller="LoginController as login">
+        <form name="loginForm"> <!-- we could add an ng-controller here, but it's a login form.  It's best to just submit login forms directly -->
             <fieldset class="">
                 <legend>Login</legend>
                 <span class="col-md-4">
                     <label>Username:</label>
-                    <input type="text" ng-model="username" placeholder="Enter username here" />
+                    <input type="text" placeholder="Enter username here" />
                 </span>
                 <span class="col-md-4">
                     <label>Password:</label>
-                    <input type="password" ng-model="password" placeholder="Enter password here" />
+                    <input type="password" placeholder="Enter password here" />
                 </span>
                 <input class="col-md-2" type="submit" value="Login" />
             </fieldset>
         </form>
     </div>
 </div>
-    <!--<div id="login-box" class="col-md-6">-->
-        <!--<form name="loginForm" ng-controller="LoginController as login">-->
-            <!--<fieldset>-->
-                <!--<legend>Login</legend>-->
-                    <!--<span class="col-md-4">-->
-                        <!--<label>Username:</label>-->
-                        <!--<input type="text" ng-model="username" placeholder="Enter username here" />-->
-                    <!--</span>-->
-                    <!--<span class="col-md-4">-->
-                        <!--<label>Password:</label>-->
-                        <!--<input type="password" ng-model="password" placeholder="Enter password here" />-->
-                    <!--</span>-->
-                <!--<input class="col-md-2" type="submit" value="Log in as {{username}}" />-->
-            <!--</fieldset>-->
-        <!--</form>-->
-    <!--</div>-->
