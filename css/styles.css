@@ -8,5 +8,10 @@
 }
 
 header {
-    background: firebrick;
+    /*background: firebrick;*/
+}
+
+footer {
+    margin-top: 10px;
+    /*background: firebrick;*/
 }
