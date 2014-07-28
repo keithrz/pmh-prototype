@@ -2,7 +2,9 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>My New Web App</title>
+    <!-- bootstrap viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plan My Hike</title>
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -10,12 +12,15 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-    <div id="page" ng-app="pmh">
+    <div id="page" ng-app="pmh" class="container">
         <header class="col-md-12">
-            <h1>Welcome to my site!</h1>
+            <h1>Plan My Hike</h1>
         </header>
-        <div id="main-home" class="container">
-            <ng-include src="'login-box.html'"></ng-include>
+        <div id="main-home">
+            <div class="row">
+                <ng-include src="'start-box.html'"></ng-include>
+                <ng-include src="'login-box.html'"></ng-include>
+            </div>
             <!-- put more components here -->
         </div>
         <footer class="col-md-12">&copy;Yukon Solutions Inc.  All rights reserved.</footer>

@@ -1,0 +1,71 @@
+<div id="start-box">
+    <form class="" name="startForm" ng-controller="StartController">
+        <fieldset class="col-md-6">
+            <legend>Start a New Trip</legend>
+            <div class="form-group">
+                <label>Route:</label>
+                <input class="form-control" type="select" ng-model="start.routeDetails.route" />
+            </div>
+            <div class="form-group">
+
+                <label>Start Date:</label>
+                <input class="form-control" type="text" ng-model="start.routeDetails.startDate"/>
+            </div>
+            <div class="form-group">
+
+                <label>Pace:</label>
+                <input class="form-control" type="text" ng-model="start.routeDetails.pace"/>
+                <select class="form-control" ng-model="paceUom"></select>
+            </div>
+            <div class="form-group">
+
+                <label>Hours Per Day:</label>
+                <input class="form-control" type="text" ng-model="start.routeDetails.hoursPerDay"/>
+            </div>
+            <div class="form-group">
+                <label>Time off</label>
+                <input class="form-control" type="text" ng-model="start.routeDetails.timeOff">
+                <select class="form-control" ng-model="start.routeDetails.timeOffUom"></select>
+            </div>
+            <div class="form-group">
+                <label>How Often</label>
+                <select class="form-control" ng-model="start.routeDetails.timeOffFrequency"></select>
+            </div>
+            <input class="btn btn-default" type="submit" value="Login" />
+        </fieldset>
+    </form>
+</div>
+
+<!--
+			<div id="home-start">
+				<form name="startForm" ng-controller="StartController as start"
+					ng-submit="start.startRoute()">
+					<span class="row">
+						<label>Route:</label>
+						<input type="select" ng-model="start.routeDetails.route" />
+					</span>
+					<span class="row">
+						<label>Start Date:</label>
+						<input type="text" ng-model="start.routeDetails.startDate"/>
+					</span>
+					<span class="row">
+						<label>Pace:</label>
+						<input type="text" ng-model="start.routeDetails.pace"/>
+						<select ng-model="paceUom"></select>
+					</span>
+					<span class="row">
+						<label>Hours Per Day:</label>
+						<input type="text" ng-model="start.routeDetails.hoursPerDay"/>
+					</span>
+					<span class="row">
+						<label>Time off</label>
+						<input type="text" ng-model="start.routeDetails.timeOff">
+						<select ng-model="start.routeDetails.timeOffUom"></select>
+						<label>Frequency</label>
+						<select ng-model="start.routeDetails.timeOffFrequency"></select>
+					</span>
+					<input class="submit-button" type="submit" value="Start My Adventure">
+				</form>
+			</div>
+
+-->
