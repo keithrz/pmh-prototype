@@ -8,10 +8,12 @@
 }
 
 header {
-    /*background: firebrick;*/
+    background: #1c94c4;
+    color: #fff;
 }
 
 footer {
     margin-top: 10px;
-    /*background: firebrick;*/
+    background: #1c94c4;
+    color: #fff;
 }

@@ -13,43 +13,53 @@
             <label>Hours Per Day:</label>
             <input class="form-control" type="text" ng-model="trip.hoursPerDay"/>
         </div>
-        <fieldset>
-            <legend>Pace</legend>
-            <div class="form-group">
-                <label>Distance:</label>
-                <input class="form-control" type="text" ng-model="trip.pace"/>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Pace:</label>
+            <div class="col-md-9">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" type="text" ng-model="trip.pace"/>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" ng-model="trip.paceUom">
+                            <option value="mph">miles per hour</option>
+                            <option value="kph">km per hour</option>
+                            <option value="mpd">miles per day</option>
+                            <option value="kpd">km per day</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Rate:</label>
-                <select class="form-control" ng-model="trip.paceUom">
-                    <option value="mph">miles per hour</option>
-                    <option value="kph">km per hour</option>
-                    <option value="mpd">miles per day</option>
-                    <option value="kpd">km per day</option>
-                </select>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Time Off:</label>
+            <div class="col-md-9">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" type="text" ng-model="trip.timeOff">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" ng-model="trip.timeOffUom">
+                            <option value="hour">hour(s)</option>
+                            <option value="day">day(s)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-        </fieldset>
-        <fieldset>
-            <legend>Time Off</legend>
-            <div class="form-group">
-                <label>Duration:</label>
-                <input class="form-control" type="text" ng-model="trip.timeOff">
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-9">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <select class="form-control" ng-model="trip.timeOffFrequency">
+                            <option value="section">at the end of each section</option>
+                            <option value="week">every week</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Duration Unit:</label>
-                <select class="form-control" ng-model="trip.timeOffUom">
-                    <option value="hour">hour(s)</option>
-                    <option value="day">day(s)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>How Often</label>
-                <select class="form-control" ng-model="trip.timeOffFrequency">
-                    <option value="section">at the end of each section</option>
-                    <option value="week">every week</option>
-                </select>
-            </div>
-        </fieldset>
+        </div>
         <input class="btn btn-default" type="submit" value="Start" />
     </form>
 </div>
