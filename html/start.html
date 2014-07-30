@@ -3,7 +3,7 @@
         <h3>Start a New Trip</h3>
         <div class="form-group">
             <label>Route:</label>
-            <input class="form-control" type="select" ng-model="trip.route" />
+            <input class="form-control" type="select" ng-model="trip.trail" />
         </div>
         <div class="form-group">
             <label>Start Date:</label>
@@ -60,6 +60,6 @@
                 </div>
             </div>
         </div>
-        <input class="btn btn-default" type="submit" value="Start" />
+        <input class="btn btn-default" type="submit" value="Start" ng-click="startTrip()"/>
     </form>
 </div>
